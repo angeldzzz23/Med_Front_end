@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lac-S5-81o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -80,6 +80,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="DeM-Lu-SUw" kind="show" id="7w4-0o-zgr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-G1-Rbj">
                                                 <rect key="frame" x="0.0" y="59" width="256" height="40"/>
@@ -127,6 +130,7 @@
                             <constraint firstItem="i8V-jF-Dav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wm2-9U-seb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9Yp-zH-i6n"/>
                     <connections>
                         <outlet property="appleButton" destination="zXd-G1-Rbj" id="ZMP-37-kfb"/>
                         <outlet property="googleButton" destination="NiD-oe-wDj" id="QxX-WZ-c9c"/>
@@ -137,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="-330"/>
+            <point key="canvasLocation" x="-250" y="-330"/>
         </scene>
         <!--RegisterView-->
         <scene sceneID="QIa-61-rQa">
@@ -235,6 +239,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="KID-tj-w2c"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -256,17 +263,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsn-Lc-VhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="-330"/>
+            <point key="canvasLocation" x="607" y="-668"/>
         </scene>
         <!--Medicine-->
         <scene sceneID="n1M-eF-pIi">
             <objects>
                 <viewController title="Medicine" id="bu6-et-8kP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfX-iI-1uS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mbT-nu-3h7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Medicine" id="IxE-le-nOO"/>
                 </viewController>
@@ -279,7 +286,7 @@
             <objects>
                 <viewController title="Home" id="WhH-18-w9d" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hVB-AO-CSm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dec 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONs-Ux-M8q">
@@ -303,7 +310,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Zm-e7-Lh0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
                             <constraint firstItem="7as-08-fg4" firstAttribute="top" secondItem="ONs-Ux-M8q" secondAttribute="bottom" constant="30" id="1Cg-cq-8yH"/>
                             <constraint firstItem="wpy-bJ-Mxs" firstAttribute="height" secondItem="ONs-Ux-M8q" secondAttribute="height" multiplier="0.795455" id="2U3-y8-DKm"/>
@@ -332,6 +339,7 @@
         <scene sceneID="ljl-HR-PHj">
             <objects>
                 <tabBarController id="DeM-Lu-SUw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kBr-Hn-5Mx"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="orA-1D-kYA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -346,17 +354,17 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pu7-v2-yqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="-330"/>
+            <point key="canvasLocation" x="1369" y="-168"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Sq6-Zg-mC7">
             <objects>
                 <viewController title="Profile" id="uC2-LN-yyK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E79-eH-KbW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xav-Ei-xeF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="vQI-u4-qpE">
                         <color key="badgeColor" systemColor="systemPinkColor"/>
@@ -406,6 +414,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
