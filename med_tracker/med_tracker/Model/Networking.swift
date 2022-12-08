@@ -170,7 +170,7 @@ class API {
     }
     
     //ADD MEDICINE FUNCTION TO POST TO API-------------------------
-    func addUserMedicine(usermed_id: Int, name: String, type: Int, time: String, days: [String: String], completion: @escaping (Result<UserMedicine, Error>) -> Void) {
+    static func addUserMedicine(usermed_id: Int, name: String, type: Int, time: String, days: [String: String], completion: @escaping (Result<UserMedicine, Error>) -> Void) {
         // Create a UserMedicine object with the given parameters
         let userMedicine = UserMedicine(usermed_id: usermed_id, name: name, type: type, time: time, days: days)
 
