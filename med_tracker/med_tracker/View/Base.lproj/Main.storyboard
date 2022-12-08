@@ -116,14 +116,51 @@
                     <view key="view" contentMode="scaleToFill" id="w84-KU-zXm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medicine Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZh-lZ-Oiv">
+                                <rect key="frame" x="108" y="92" width="198" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time. Ex (2pm)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hB0-om-Su6">
+                                <rect key="frame" x="108" y="198" width="198" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-4o-JyC">
+                                <rect key="frame" x="143" y="326" width="129" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Medicine">
+                                    <color key="baseForegroundColor" red="0.2499773649" green="0.0" blue="0.52569265460000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addMedicineButtonTapped:" destination="bh3-ai-XmX" eventType="touchUpInside" id="YzN-kI-0Kq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Medicine Quantity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20L-pL-9Cd">
+                                <rect key="frame" x="108" y="144" width="198" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pjN-wU-XlC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="acc-iH-Z2C"/>
+                    <connections>
+                        <outlet property="medAmount" destination="20L-pL-9Cd" id="BZa-jX-Xd1"/>
+                        <outlet property="medName" destination="XZh-lZ-Oiv" id="gzf-57-Suk"/>
+                        <outlet property="medTime" destination="hB0-om-Su6" id="9yY-WI-q9y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBY-Po-CMg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8803" y="576"/>
+            <point key="canvasLocation" x="8802.898550724638" y="575.89285714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Qwx-2n-Kd2">
@@ -215,19 +252,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="538-Ul-hxY">
-                                <rect key="frame" x="20" y="88" width="374" height="594"/>
+                                <rect key="frame" x="20" y="88" width="374" height="604"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-wg-CeH">
-                                        <rect key="frame" x="96" y="0.0" width="182" height="206"/>
+                                        <rect key="frame" x="96" y="0.0" width="182" height="216"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Med Track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKH-rP-tKX">
-                                                <rect key="frame" x="0.0" y="0.0" width="182" height="163.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="173.5"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="34"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sign Up Below!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-19-qeD">
-                                                <rect key="frame" x="0.0" y="183.5" width="182" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="193.5" width="182" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -235,12 +272,12 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jcd-g6-ML1">
-                                        <rect key="frame" x="20" y="237" width="334" height="285"/>
+                                        <rect key="frame" x="20" y="247" width="334" height="285"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cwr-wf-4Gx">
                                                 <rect key="frame" x="10" y="0.0" width="314" height="41"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PoI-1e-VhI" customClass="CustomTextField" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PoI-1e-VhI" customClass="CustomTextField" customModule="med_tracker" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="IHS-kJ-Q2o"/>
@@ -257,7 +294,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-8s-TSB">
                                                 <rect key="frame" x="10" y="61" width="314" height="41"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MB2-Ks-tP2" customClass="CustomTextField" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MB2-Ks-tP2" customClass="CustomTextField" customModule="med_tracker" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="XoA-tp-pOJ"/>
@@ -274,7 +311,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eN5-dS-PV3">
                                                 <rect key="frame" x="10" y="122" width="314" height="41"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-ZM-kX8" customClass="CustomTextField" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SLo-ZM-kX8" customClass="CustomTextField" customModule="med_tracker" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="Axz-Gv-o8h"/>
@@ -291,7 +328,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HGJ-rN-3KU">
                                                 <rect key="frame" x="10" y="183" width="314" height="41"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-hg-G2D" customClass="CustomTextField" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yjr-hg-G2D" customClass="CustomTextField" customModule="med_tracker" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="SwF-lC-jzn"/>
@@ -308,7 +345,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k3G-Vm-tKG">
                                                 <rect key="frame" x="10" y="244" width="314" height="41"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-A6-gJ5" customClass="CustomTextField" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-A6-gJ5" customClass="CustomTextField" customModule="med_tracker" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="314" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="41" id="JJM-hR-j0C"/>
@@ -337,9 +374,9 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="drD-3b-Ynx">
-                                        <rect key="frame" x="10" y="553" width="354" height="41"/>
+                                        <rect key="frame" x="10" y="563" width="354" height="41"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK5-KW-XbH" customClass="SignUpButton" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK5-KW-XbH" customClass="SignUpButton" customModule="med_tracker" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="41"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="EON-Zo-CEG"/>
@@ -427,7 +464,7 @@
         <!--WelcomeScreen-->
         <scene sceneID="2p8-iP-U02">
             <objects>
-                <viewController title="WelcomeScreen" id="Wjx-D4-1I8" customClass="ViewController" customModule="MedTrackerAppStoryBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WelcomeScreen" id="Wjx-D4-1I8" customClass="ViewController" customModule="med_tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8uT-rf-eY0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +483,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xq-y5-7AP" customClass="WelcomeScreenButtons" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xq-y5-7AP" customClass="WelcomeScreenButtons" customModule="med_tracker" customModuleProvider="target">
                                 <rect key="frame" x="110" y="472" width="172" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -454,7 +491,7 @@
                                     <fontDescription key="titleFontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="26"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzU-Qo-l4f" customClass="WelcomeScreenButtons" customModule="MedTrackerAppStoryBoard" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzU-Qo-l4f" customClass="WelcomeScreenButtons" customModule="med_tracker" customModuleProvider="target">
                                 <rect key="frame" x="143" y="548" width="107" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>

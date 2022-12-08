@@ -4,26 +4,67 @@
 //
 //  Created by Angel Zambrano on 12/7/22.
 //
-
+import Foundation
 import UIKit
 
-class AddingNewMedicine: UIViewController {
 
+class AddingNewMedicine: UIViewController {
+    //Variable to keep track of medicines
+    //var medicines = []
+    
+    //Crete the variables for the adding of the medicine
+    
+    @IBOutlet weak var medName: UITextField!
+    @IBOutlet weak var medAmount: UITextField!
+    @IBOutlet weak var medTime: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func addMedicineButtonTapped(_ sender: Any) {
+        let medicineName = medName.text!
+        let medicineAmount = medAmount.text!
+        let medicineTime = medTime.text!
+        
+        let parameters = ["name" : medicineName, "type" : medicineAmount, "time": medicineTime]
+        let url = URL(string: "http://143.198.178.220:8000/medicine/create")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+        
+        let task = URLSession.shared.dataTask(with: request) { (data,response,error) in
+            if let error = error {
+                //Handle error
+                print("Error sending request: \(error)")
+                return
+            }
+            
+           /* if let data = data {
+                //Parse the response data and create the medicine
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                    
+                    //Parse the JSON data and create the medicine
+                    let medicine = Medicine(medicineName: json["name"] as! String,medicineAmount: json["type"] as! String, medicineTime: json["time"] as! String)
+                } catch {
+                    print("Errpr parsing repsonse: \(error)")
+                }
+            }*/
+            
+        }
+        
+        task.resume()
+        
+        
+        
+        
+        
     }
-    */
-
+    
 }
