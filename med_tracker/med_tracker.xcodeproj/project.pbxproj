@@ -16,6 +16,7 @@
 		1C987F5D2903326300A8D1C5 /* med_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C987F5C2903326300A8D1C5 /* med_trackerTests.swift */; };
 		1C987F672903326300A8D1C5 /* med_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C987F662903326300A8D1C5 /* med_trackerUITests.swift */; };
 		1C987F692903326300A8D1C5 /* med_trackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C987F682903326300A8D1C5 /* med_trackerUITestsLaunchTests.swift */; };
+		1CD06BE82941617100E03F31 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BE72941617100E03F31 /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1C987F622903326300A8D1C5 /* med_trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = med_trackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C987F662903326300A8D1C5 /* med_trackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = med_trackerUITests.swift; sourceTree = "<group>"; };
 		1C987F682903326300A8D1C5 /* med_trackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = med_trackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CD06BE72941617100E03F31 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1C987F4E2903326300A8D1C5 /* Assets.xcassets */,
 				1C987F502903326300A8D1C5 /* LaunchScreen.storyboard */,
 				1C987F532903326300A8D1C5 /* Info.plist */,
+				1CD06BE72941617100E03F31 /* Networking.swift */,
 			);
 			path = med_tracker;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				1C987F4A2903326200A8D1C5 /* ViewController.swift in Sources */,
 				1C987F462903326200A8D1C5 /* AppDelegate.swift in Sources */,
 				1C987F482903326200A8D1C5 /* SceneDelegate.swift in Sources */,
+				1CD06BE82941617100E03F31 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
