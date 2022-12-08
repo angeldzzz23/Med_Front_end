@@ -20,7 +20,6 @@
 		1CD06BEA29416D4A00E03F31 /* MyMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */; };
 		1CD06BEC2941761C00E03F31 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */; };
 		1CD06BEE294181D400E03F31 /* AddingNewMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */; };
-		6ECE04122941CBB500E5D53F /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECE04112941CBB500E5D53F /* Medicine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicineViewController.swift; sourceTree = "<group>"; };
 		1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
 		1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewMedicine.swift; sourceTree = "<group>"; };
-		6ECE04112941CBB500E5D53F /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +156,6 @@
 		1CD06BF1294181F700E03F31 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6ECE04112941CBB500E5D53F /* Medicine.swift */,
 				1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */,
 				1C987F492903326200A8D1C5 /* ViewController.swift */,
 				1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */,
@@ -304,7 +301,6 @@
 				1CD06BEE294181D400E03F31 /* AddingNewMedicine.swift in Sources */,
 				1C987F482903326200A8D1C5 /* SceneDelegate.swift in Sources */,
 				1CD06BE82941617100E03F31 /* Networking.swift in Sources */,
-				6ECE04122941CBB500E5D53F /* Medicine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
