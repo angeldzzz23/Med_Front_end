@@ -19,6 +19,7 @@
 		1CD06BE82941617100E03F31 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BE72941617100E03F31 /* Networking.swift */; };
 		1CD06BEA29416D4A00E03F31 /* MyMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */; };
 		1CD06BEC2941761C00E03F31 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */; };
+		1CD06BEE294181D400E03F31 /* AddingNewMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1CD06BE72941617100E03F31 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicineViewController.swift; sourceTree = "<group>"; };
 		1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewMedicine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +109,12 @@
 			children = (
 				1C987F452903326200A8D1C5 /* AppDelegate.swift */,
 				1C987F472903326200A8D1C5 /* SceneDelegate.swift */,
-				1C987F492903326200A8D1C5 /* ViewController.swift */,
-				1C987F4B2903326200A8D1C5 /* Main.storyboard */,
-				1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */,
+				1CD06BEF294181E700E03F31 /* Model */,
+				1CD06BF0294181F100E03F31 /* View */,
+				1CD06BF1294181F700E03F31 /* Controller */,
 				1C987F4E2903326300A8D1C5 /* Assets.xcassets */,
 				1C987F502903326300A8D1C5 /* LaunchScreen.storyboard */,
 				1C987F532903326300A8D1C5 /* Info.plist */,
-				1CD06BE72941617100E03F31 /* Networking.swift */,
-				1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */,
 			);
 			path = med_tracker;
 			sourceTree = "<group>";
@@ -134,6 +134,33 @@
 				1C987F682903326300A8D1C5 /* med_trackerUITestsLaunchTests.swift */,
 			);
 			path = med_trackerUITests;
+			sourceTree = "<group>";
+		};
+		1CD06BEF294181E700E03F31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CD06BE72941617100E03F31 /* Networking.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CD06BF0294181F100E03F31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C987F4B2903326200A8D1C5 /* Main.storyboard */,
+				1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CD06BF1294181F700E03F31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */,
+				1C987F492903326200A8D1C5 /* ViewController.swift */,
+				1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +298,7 @@
 				1CD06BEC2941761C00E03F31 /* MedicineTableViewCell.swift in Sources */,
 				1C987F462903326200A8D1C5 /* AppDelegate.swift in Sources */,
 				1CD06BEA29416D4A00E03F31 /* MyMedicineViewController.swift in Sources */,
+				1CD06BEE294181D400E03F31 /* AddingNewMedicine.swift in Sources */,
 				1C987F482903326200A8D1C5 /* SceneDelegate.swift in Sources */,
 				1CD06BE82941617100E03F31 /* Networking.swift in Sources */,
 			);

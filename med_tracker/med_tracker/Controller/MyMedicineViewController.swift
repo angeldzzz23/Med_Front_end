@@ -38,19 +38,22 @@ class MyMedicineViewController: UIViewController {
         }
     }
     
+
+    // TODO: do me Arturo
     
+   
     
+   
     
     
     
     func setUpViews() {
         view.addSubview(tableview)
-        tableview.backgroundColor = .red
         tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableview.register(MedicineTableViewCell.self, forCellReuseIdentifier: MedicineTableViewCell.identifier)
 
         
-        tableview.backgroundColor = .red
+        
         tableview.translatesAutoresizingMaskIntoConstraints = false
         tableview.dataSource = self
         
