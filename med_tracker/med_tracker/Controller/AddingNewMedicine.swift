@@ -9,8 +9,8 @@ import UIKit
 
 
 class AddingNewMedicine: UIViewController {
-    //Variable to keep track of medicines
-    //var medicines = []
+    //Variable to keep track of medicines (Object)
+    var medicines = [Medicine]()
     
     //Crete the variables for the adding of the medicine
     
@@ -44,18 +44,22 @@ class AddingNewMedicine: UIViewController {
                 print("Error sending request: \(error)")
                 return
             }
-            
-           /* if let data = data {
+            //DATA RESPONSE FROM API POST
+            //ASIGNING IT TO A MEDICINE OBJECT
+           if let data = data {
                 //Parse the response data and create the medicine
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                     
-                    //Parse the JSON data and create the medicine
-                    let medicine = Medicine(medicineName: json["name"] as! String,medicineAmount: json["type"] as! String, medicineTime: json["time"] as! String)
+                    //Parse the JSON data and create the medicine object
+                    let medicine = Medicine(Medname: json["name"] as! String,MedCount: json["type"] as! String, medTime: json["time"] as! String)
+                    
+                    //Add medicine to the array
+                    self.medicines.append(medicine)
                 } catch {
-                    print("Errpr parsing repsonse: \(error)")
+                    print("Error parsing repsonse: \(error)")
                 }
-            }*/
+            }
             
         }
         
