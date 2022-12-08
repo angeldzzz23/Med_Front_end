@@ -8,6 +8,28 @@
 import Foundation
 
 
+// MARK: - MedicineGetter
+struct MedicineGetter:Codable {
+    let success: Bool?
+    let data: DataClass?
+}
+
+// MARK: - DataClass
+struct DataClass:Codable {
+    let user_medicine: [UserMedicine]?
+}
+
+// MARK: - UserMedicine
+struct UserMedicine:Codable {
+    let usermed_id: Int?
+    let name: String?
+    let type: Int?
+    let time: String?
+    let days: [String: String]
+}
+
+
+
 class API {
     let shared = API()
     
@@ -108,5 +130,42 @@ class API {
 
         task.resume()
         
+    }
+    
+    
+    static func gettingUserMedications(completion: @escaping (Result<MedicineGetter?, Error>) -> Void) {
+        guard var url  = URLComponents(string: "http://143.198.178.220:8000/medicine/create") else {return}
+    
+    var request = URLRequest(url: url.url!)
+    
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.addValue("application/json", forHTTPHeaderField: "Accept")
+    request.httpMethod = "GET"
+
+    
+    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        if let error = error {
+            completion(.failure(error))
+        } else if let data = data {
+            do {
+                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                
+                print(responseJSON)
+                
+                
+                
+                print(data)
+                let decoder = JSONDecoder()
+                let searchResponse = try decoder.decode(MedicineGetter.self, from: data) // gets the artists
+                
+
+                completion(.success(searchResponse))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+
+    task.resume()
     }
 }
