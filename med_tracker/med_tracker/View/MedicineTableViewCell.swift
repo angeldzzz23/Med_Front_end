@@ -44,8 +44,7 @@ class MedicineTableViewCell: UITableViewCell {
         daysLbl.text = "Daily"
         daysLbl.translatesAutoresizingMaskIntoConstraints = false
         
-        
-        
+          
         
         NSLayoutConstraint.activate([
             sv.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),

@@ -33,6 +33,12 @@ class ToTakeMedicineMedicineTableViewCell: UITableViewCell {
         return btn
     }()
     
+    func configure(istake: Bool) {
+        self.isTaken = istake
+        self.updateButton()
+        
+    }
+    
     func configure(pillName: String) {
         self.medicineNameLbl.text = pillName
     }
@@ -44,6 +50,10 @@ class ToTakeMedicineMedicineTableViewCell: UITableViewCell {
     
     
     @objc func buttonWasPressed() {
+        self.updateButton()
+    }
+    
+    func updateButton() {
         if !isTaken {
             button.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
             isTaken = true

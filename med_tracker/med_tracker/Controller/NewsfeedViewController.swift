@@ -138,7 +138,7 @@ extension NewsfeedViewController: UITableViewDataSource {
             if let sect = sections[tm] {
                 let pill = sect[indexPath.row]
                 cell.configure(pillName: pill.name)
-                
+                cell.configure(istake: pill.taken)
             }
             
         }
