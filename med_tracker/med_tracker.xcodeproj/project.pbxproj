@@ -20,6 +20,9 @@
 		1CD06BEA29416D4A00E03F31 /* MyMedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */; };
 		1CD06BEC2941761C00E03F31 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */; };
 		1CD06BEE294181D400E03F31 /* AddingNewMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */; };
+		1CD06BF32943A1A200E03F31 /* NewsfeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BF22943A1A200E03F31 /* NewsfeedViewController.swift */; };
+		1CD06BF52943A73300E03F31 /* ToTakeMedicineMedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BF42943A73300E03F31 /* ToTakeMedicineMedicineTableViewCell.swift */; };
+		1CD06BF72943B5ED00E03F31 /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD06BF62943B5ED00E03F31 /* TimeLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicineViewController.swift; sourceTree = "<group>"; };
 		1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
 		1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingNewMedicine.swift; sourceTree = "<group>"; };
+		1CD06BF22943A1A200E03F31 /* NewsfeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedViewController.swift; sourceTree = "<group>"; };
+		1CD06BF42943A73300E03F31 /* ToTakeMedicineMedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToTakeMedicineMedicineTableViewCell.swift; sourceTree = "<group>"; };
+		1CD06BF62943B5ED00E03F31 /* TimeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				1CD06BE72941617100E03F31 /* Networking.swift */,
+				1CD06BF62943B5ED00E03F31 /* TimeLine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +156,7 @@
 			children = (
 				1C987F4B2903326200A8D1C5 /* Main.storyboard */,
 				1CD06BEB2941761C00E03F31 /* MedicineTableViewCell.swift */,
+				1CD06BF42943A73300E03F31 /* ToTakeMedicineMedicineTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		1CD06BF1294181F700E03F31 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1CD06BF22943A1A200E03F31 /* NewsfeedViewController.swift */,
 				1CD06BED294181D400E03F31 /* AddingNewMedicine.swift */,
 				1C987F492903326200A8D1C5 /* ViewController.swift */,
 				1CD06BE929416D4A00E03F31 /* MyMedicineViewController.swift */,
@@ -294,13 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD06BF72943B5ED00E03F31 /* TimeLine.swift in Sources */,
 				1C987F4A2903326200A8D1C5 /* ViewController.swift in Sources */,
 				1CD06BEC2941761C00E03F31 /* MedicineTableViewCell.swift in Sources */,
 				1C987F462903326200A8D1C5 /* AppDelegate.swift in Sources */,
 				1CD06BEA29416D4A00E03F31 /* MyMedicineViewController.swift in Sources */,
 				1CD06BEE294181D400E03F31 /* AddingNewMedicine.swift in Sources */,
 				1C987F482903326200A8D1C5 /* SceneDelegate.swift in Sources */,
+				1CD06BF52943A73300E03F31 /* ToTakeMedicineMedicineTableViewCell.swift in Sources */,
 				1CD06BE82941617100E03F31 /* Networking.swift in Sources */,
+				1CD06BF32943A1A200E03F31 /* NewsfeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

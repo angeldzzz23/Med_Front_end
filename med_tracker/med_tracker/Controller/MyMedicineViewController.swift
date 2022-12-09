@@ -18,8 +18,11 @@ class MyMedicineViewController: UIViewController {
         title = "My Medicine"
         setUpViews()
         
-        
-        
+      
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         API.gettingUserMedications { result in
             switch result {
             case .success(let med):
@@ -36,15 +39,8 @@ class MyMedicineViewController: UIViewController {
                 print("error", err.localizedDescription)
             }
         }
+        
     }
-    
-
-    // TODO: do me Arturo
-    
-   
-    
-   
-    
     
     
     func setUpViews() {
@@ -65,9 +61,10 @@ class MyMedicineViewController: UIViewController {
         ])
            
     }
-
-    
 }
+
+
+
 
 extension MyMedicineViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

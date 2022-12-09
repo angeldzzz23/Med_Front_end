@@ -169,6 +169,44 @@ class API {
     task.resume()
     }
     
+    // getting the timeline
+
+    static func gettingTimeline(completion: @escaping (Result<Timeline?, Error>) -> Void) {
+        guard var url  = URLComponents(string: "http://143.198.178.220:8000/timeline/daily") else {return}
+    
+    var request = URLRequest(url: url.url!)
+    
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.addValue("application/json", forHTTPHeaderField: "Accept")
+    request.httpMethod = "GET"
+
+    
+    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        if let error = error {
+            completion(.failure(error))
+        } else if let data = data {
+            do {
+                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                
+                print(responseJSON)
+                
+                
+                
+                print(data)
+                let decoder = JSONDecoder()
+                let searchResponse = try decoder.decode(Timeline.self, from: data) // gets the artists
+                
+
+                completion(.success(searchResponse))
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+
+    task.resume()
+    }
+    
 
 
 }

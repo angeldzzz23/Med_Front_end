@@ -29,10 +29,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        UserDefaults.standard.set(true, forKey: "userLoggedIn")
-//        self.performSegue(withIdentifier: "loginToHome", sender: self)
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,15 +63,10 @@ class ViewController: UIViewController {
     
         
         
-        
     }
     
     @IBAction func LoginButtonWasPressed(_ sender: UIButton) {
         if let email = emailTextfield.text, let password = passwordtxtfield.text {
-            
-            
-            
-            
             API.logIn(email: email, password: password) { result in
                 switch result {
                 case .success(let logIn):
@@ -92,9 +83,6 @@ class ViewController: UIViewController {
                             self.performSegue(withIdentifier: "loginToHome", sender: self)
                         }
                     }
-           
-                    
-                    
                 case .failure(let error):
                     print(error.localizedDescription)
                 }

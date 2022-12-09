@@ -17,9 +17,7 @@ class AddingNewMedicine: UIViewController {
     //Values above represent numbers to append to array
     var daysChoice = [Int]()
     
-    //---------------------Days of the week
    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -69,6 +67,7 @@ class AddingNewMedicine: UIViewController {
             }
            
         }
+        
         
         
     }
@@ -234,6 +233,13 @@ class AddingNewMedicine: UIViewController {
             do {
                 let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                 print("Success: \(response)")
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+
+                }
+                // segue back to viewcontroller
+                
+                
             }
             catch {
                 print(error)
