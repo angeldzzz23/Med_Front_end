@@ -190,7 +190,6 @@ class AddingNewMedicine: UIViewController {
             }
         }
     }
-    //METHOD TO CHANGE THE TIMES STRING
     
     
     

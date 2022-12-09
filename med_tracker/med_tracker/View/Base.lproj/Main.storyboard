@@ -117,112 +117,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DuA-4C-pZn">
-                                <rect key="frame" x="137" y="106" width="150.5" height="108.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="efP-4P-iB4">
+                                <rect key="frame" x="0.0" y="292" width="414" height="472"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Medicine" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZh-lZ-Oiv">
-                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Time Below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-bC-Bcx">
-                                        <rect key="frame" x="0.0" y="44" width="150.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJs-kz-Eye">
-                                        <rect key="frame" x="0.0" y="74.5" width="150.5" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3G-dG-FsL">
-                                <rect key="frame" x="3" y="263" width="409.5" height="34.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-m4-wWo">
-                                        <rect key="frame" x="0.0" y="0.0" width="409.5" height="34.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DuA-4C-pZn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="377"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deK-aI-grb">
-                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="34.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Medicine" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZh-lZ-Oiv">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="302.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choose Time Below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qm-bC-Bcx">
+                                                <rect key="frame" x="0.0" y="312.5" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJs-kz-Eye">
+                                                <rect key="frame" x="0.0" y="343" width="414" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="m3G-dG-FsL">
+                                        <rect key="frame" x="0.0" y="397" width="414" height="75"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-m4-wWo">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deK-aI-grb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Mon"/>
+                                                        <connections>
+                                                            <action selector="mondayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="9t3-Rh-ShL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLC-YL-EqN">
+                                                        <rect key="frame" x="59" y="0.0" width="59.5" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Tue"/>
+                                                        <connections>
+                                                            <action selector="tuesdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="vfG-ij-hRl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awT-Cy-cEZ">
+                                                        <rect key="frame" x="118.5" y="0.0" width="59" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Wed"/>
+                                                        <connections>
+                                                            <action selector="wednesdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="WFs-y0-e3d"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht0-fX-kX3">
+                                                        <rect key="frame" x="177.5" y="0.0" width="59" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Thu"/>
+                                                        <connections>
+                                                            <action selector="thursdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="MWQ-SC-85h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-Zv-38J">
+                                                        <rect key="frame" x="236.5" y="0.0" width="59" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Fri"/>
+                                                        <connections>
+                                                            <action selector="fridayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="Bhe-YY-MTU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ac-Aa-oJq">
+                                                        <rect key="frame" x="295.5" y="0.0" width="59.5" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Sat"/>
+                                                        <connections>
+                                                            <action selector="saturdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="iEj-cO-dQ8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzA-nQ-YM2">
+                                                        <rect key="frame" x="355" y="0.0" width="59" height="34.5"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Sun"/>
+                                                        <connections>
+                                                            <action selector="sundayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="wcb-uS-TJU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-4o-JyC">
+                                                <rect key="frame" x="0.0" y="40.5" width="414" height="34.5"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Mon"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add Medicine">
+                                                    <color key="baseForegroundColor" red="0.2499773649" green="0.0" blue="0.52569265460000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="mondayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="9t3-Rh-ShL"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLC-YL-EqN">
-                                                <rect key="frame" x="58.5" y="0.0" width="58.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Tue"/>
-                                                <connections>
-                                                    <action selector="tuesdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="vfG-ij-hRl"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awT-Cy-cEZ">
-                                                <rect key="frame" x="117" y="0.0" width="58.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Wed"/>
-                                                <connections>
-                                                    <action selector="wednesdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="WFs-y0-e3d"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht0-fX-kX3">
-                                                <rect key="frame" x="175.5" y="0.0" width="58.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Thu"/>
-                                                <connections>
-                                                    <action selector="thursdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="MWQ-SC-85h"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-Zv-38J">
-                                                <rect key="frame" x="234" y="0.0" width="58.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Fri"/>
-                                                <connections>
-                                                    <action selector="fridayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="Bhe-YY-MTU"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ac-Aa-oJq">
-                                                <rect key="frame" x="292.5" y="0.0" width="58.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Sat"/>
-                                                <connections>
-                                                    <action selector="saturdayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="iEj-cO-dQ8"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzA-nQ-YM2">
-                                                <rect key="frame" x="351" y="0.0" width="58.5" height="34.5"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Sun"/>
-                                                <connections>
-                                                    <action selector="sundayButton:" destination="bh3-ai-XmX" eventType="touchUpInside" id="wcb-uS-TJU"/>
+                                                    <action selector="addMedicineButtonTapped:" destination="bh3-ai-XmX" eventType="touchUpInside" id="YzN-kI-0Kq"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-4o-JyC">
-                                <rect key="frame" x="142" y="430" width="128.5" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Add Medicine">
-                                    <color key="baseForegroundColor" red="0.2499773649" green="0.0" blue="0.52569265460000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="addMedicineButtonTapped:" destination="bh3-ai-XmX" eventType="touchUpInside" id="YzN-kI-0Kq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pjN-wU-XlC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pjN-wU-XlC" firstAttribute="trailing" secondItem="m3G-dG-FsL" secondAttribute="trailing" id="PdS-pa-old"/>
-                            <constraint firstItem="pjN-wU-XlC" firstAttribute="bottom" secondItem="m3G-dG-FsL" secondAttribute="bottom" id="TZd-4o-yVh"/>
-                            <constraint firstItem="m3G-dG-FsL" firstAttribute="top" secondItem="DuA-4C-pZn" secondAttribute="bottom" constant="60" id="ZR9-vl-iBj"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="leading" secondItem="pjN-wU-XlC" secondAttribute="leading" id="74R-v1-JeN"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="trailing" secondItem="pjN-wU-XlC" secondAttribute="trailing" id="7Yy-iq-grB"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="bottom" secondItem="pjN-wU-XlC" secondAttribute="bottom" id="DU2-XZ-0vT"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="trailing" secondItem="pjN-wU-XlC" secondAttribute="trailing" id="He4-3q-RbC"/>
+                            <constraint firstItem="pjN-wU-XlC" firstAttribute="trailing" secondItem="efP-4P-iB4" secondAttribute="trailing" id="Iif-Sl-zxf"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="top" secondItem="pjN-wU-XlC" secondAttribute="top" constant="200" id="KU2-U0-ZdY"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="leading" secondItem="pjN-wU-XlC" secondAttribute="leading" id="dcU-wx-DYZ"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="leading" secondItem="pjN-wU-XlC" secondAttribute="leading" id="pAK-Fc-6dB"/>
+                            <constraint firstItem="efP-4P-iB4" firstAttribute="trailing" secondItem="pjN-wU-XlC" secondAttribute="trailing" id="tbR-Jt-dv3"/>
+                            <constraint firstItem="pjN-wU-XlC" firstAttribute="bottom" secondItem="efP-4P-iB4" secondAttribute="bottom" id="yaf-bJ-acl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="acc-iH-Z2C"/>
