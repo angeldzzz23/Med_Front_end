@@ -169,38 +169,6 @@ class API {
     task.resume()
     }
     
-    //ADD MEDICINE FUNCTION TO POST TO API-------------------------
-    static func addUserMedicine(usermed_id: Int, name: String, type: Int, time: String, days: [String: String], completion: @escaping (Result<UserMedicine, Error>) -> Void) {
-        // Create a UserMedicine object with the given parameters
-        let userMedicine = UserMedicine(usermed_id: usermed_id, name: name, type: type, time: time, days: days)
-
-        // Send a request to the server to add the user medicine
-        let url = URL(string: "http://143.198.178.220:8000/medicine/create")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.httpBody = try? JSONEncoder().encode(userMedicine)
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            // Check for errors
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-
-            // Store the response data in a local variable
-            let responseData = data
-
-            // Parse the response from the server and return the result to the caller via the completion handler
-            do {
-                let decoder = JSONDecoder()
-                let userMedicineResponse = try decoder.decode(UserMedicine.self, from: responseData!)
-                completion(.success(userMedicineResponse))
-            } catch {
-                completion(.failure(error))
-            }
-        }
-        task.resume()
-    }
 
 
 }
